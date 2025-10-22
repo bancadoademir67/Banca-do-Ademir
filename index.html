@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Banca do Ademir</title>
+  <meta name="description" content="Banca do Ademir — produtos orgânicos frescos direto do CEASA e da chácara. Peça sua cesta por WhatsApp e retire na feira todos os sábados.">
+  <meta name="theme-color" content="#2f8f4a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"><img src="imagens/logo ademir.png" width="70" height="70" alt=""></div>
+        <div>
+          <h1>Banca do Ademir</h1>
+          <div class="tagline">Orgânicos frescos — Praça Sinésio Martins, Jardim Esplanada · Sábados 05:30–12:00</div>
+        </div>
+      </div>
+
+      <div class="cta">
+        
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="grid">
+      
+
+      <div>
+        <section id="produtos" class="card products">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <h3>Produtos</h3>
+          </div>
+
+          <div class="controls">
+            <div class="search"><input type="search" id="search" placeholder="Procurar produto (ex: banana, tomate)"></div>
+            <button class="btn ghost" id="reset">Limpar</button>
+          </div>
+
+          <ul class="products-list" id="productList" aria-live="polite"></ul>
+        </section>
+      </div>
+      <div class="cart">
+
+        <div class="card contact-card">
+
+          <h3>Montar pedido</h3>
+
+          <p class="meta">Adicione itens à cesta e clique em "Enviar por WhatsApp" para finalizar o pedido.</p>
+
+          <div id="cartItems" style="min-height:60px"></div>
+
+          <div class="cart-summary" id="cartTotal">Itens: 0</div>
+            <div style="margin-top:10px; display: flex; flex-direction: column; gap: 8px;">
+            <button class="order-btn" id="clearCart" style="background-color: #ccc; color: #ffffff;">🗑️ Limpar carrinho</button>
+          </div>
+
+          <div style="margin-top:10px">
+            <button class="order-btn" id="sendOrder">Enviar por WhatsApp</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <strong>Ademir Francisco Silvério</strong> — Banca do Ademir -	Praça Sinésio Martins	- Jardim Esplanada II	- São José dos Campos/SP - 12242-700</div>
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap" class="meta">Contato: (12) 99644‑6183</div>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
